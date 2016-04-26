@@ -1,0 +1,212 @@
+/* _rwd.scss */
+@media screen and (max-width: 960px) {
+  html, body {
+    font-size: 50%;
+
+    /* global overrides */
+    .content {
+      width: 100vw !important;
+    }
+    .separator, .separator--dark, .separator--light {
+      width: 100vw;
+      background-size: 100vw auto;
+      margin: 20px auto;
+      height: 30px;
+    }
+    /* global overrides end */
+  }
+  .top-menu--rwd {
+    transform: translate(0, -250px);
+  }
+  .top-menu--hidden {
+    transform: translate(0, -290px);
+  }
+  #top-menu:hover {
+    transform: translate(0, -50px);
+  }
+  #top-menu {
+    display: block;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 60px;
+    #navigation {
+      border-bottom: solid 1px #3a3a3a;
+      display: block;
+      width: 90%;
+      text-align: center;
+      margin-bottom: 15px;
+      margin-left: 5%;
+    }
+  }
+  #main {
+    #header {
+      .header-bit {
+        margin-top: -140px;
+        h2 {
+          font-size: 8.5rem;
+        }
+        img {
+        }
+      }
+    }
+    #overview {
+      background-color: #fff;
+      position: relative;
+      height: 1400px;
+      width: 100%;
+      margin: auto;
+      padding-bottom: 0px;
+      .skyline {
+        position: absolute;
+        margin-left: -160px;
+        max-width: 320px;
+        h3 {
+          margin: 0px 20px 0px 20px;
+          border-bottom: 1px solid #dbdbdb;
+          padding-bottom: 30px;
+        }
+        img {
+          margin-top: -116px;
+          width: 320px;
+        }
+      }
+      .introduction {
+        padding-top: 350px;
+        .people {
+          width: 100vw;
+          height: 150px;
+          margin: 100px auto;
+          display: block;
+          .person {
+            width: 150px;
+            margin: 80px auto;
+            .person-under {
+              h4 {
+                padding-top: 25px;
+              }
+            }
+            .person-cover {
+              left: 0;
+              margin-left: 2.5vw;
+              width: 95vw;
+              height: 750px;
+              .person-cover--photo {
+                left: 50%;
+                top: 100px;
+                height: 150px;
+                margin-left: -87.5px;
+                background: #352f2f;
+                img {
+                  left: 0;
+                }
+              }
+              .person-cover--description {
+                position: initial;
+                padding: 200px 0;
+                left: 0;
+                height: auto;
+                width: 80%;
+                margin: 0 auto;
+                h4 {
+                  height: 50px;
+                }
+                p {
+                  font-size: 2rem;
+                  line-height: 2.5rem;
+                  height: 160px;
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #quotation {
+      color: #fff;
+      .content {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -3rem;
+        margin-left: 0;
+        padding: 0 15px;
+      }
+    }
+    #topics {
+      background-color: #fff;
+      .content {
+        h2 {
+          padding-top: 100px;
+        }
+        .blocks {
+          margin: 50px 0;
+          .block {
+            position: relative;
+            width: 320px;
+            height: 150px;
+            margin: 20px auto;
+            border: solid 1.5px #ddd;
+            .text {
+              width: auto;
+              padding: 0px;
+              margin: auto;
+              p {
+                line-height: 1.6rem;
+              }
+            }
+          }
+          .cover {
+            position: absolute;
+            top: -1.5%;
+            left: -1.5%;
+            width: 103%;
+            height: 103%;
+            margin: 0;
+            pointer-events: none;
+            background-color: #fff;
+            background-size: 100% auto !important;
+            background-position: center !important;
+            background-color: #fff !important;
+          }
+          .society {
+            background: none;
+          }
+          .travel {
+            background: none;
+          }
+          .critique {
+            background: none;
+          }
+        }
+      }
+    }
+  #latest-posts {
+    .latest-mid {
+      .slick-slider {
+        .slick-list {
+          .slick-track {
+            .slick-slider--element {
+              .cover {
+                padding-top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .latest-bottom {
+      .latest-bottom--inside {
+        .content {
+          background-color: rgba(0, 0, 0, 0.4);
+          .quote {
+            width: 100%;
+            background-position: 55px 95px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* _rwd.scss end */
