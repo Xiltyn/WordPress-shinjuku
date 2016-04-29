@@ -1,0 +1,110 @@
+#main {
+  text-align: center;
+  #header_small {
+    background: url('css/img/header_background.jpg') no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-size: 5rem;
+    height: 300px;
+    width: 100vw;
+    .header-bit {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -220px;
+      margin-left: -75px;
+      line-height: 3rem;
+      width: 150px;
+      h2 {
+        color: #fff;
+        font-size: 6.5rem;
+        margin-left: -.5rem;
+        font-style: italic;
+        border-bottom: solid 2px #fff;
+        line-height: 6.5rem;
+      }
+      img {
+        margin-top: 5px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  #blog {
+    position: relative;
+    width: 960px;
+    margin: 50px auto;
+    h2 {
+      margin-top: 50px;
+    }
+    .blog-post--wrapper {
+      width: 700px;
+      margin-left: 0;
+      margin-top: 75px;
+      background: #f7f6f6;
+      .blog-post--header {
+        height: 90px;
+        width: 100%;
+        background: #1a1a1a;
+        padding: 5px 10px;
+        h3 {
+          color: #fff;
+          width: 100%;
+          text-align: left;
+          border-bottom: 1px solid #fff;
+          margin-bottom: 5px;
+          padding-bottom: 5px;
+          font-size: 5rem;
+        }
+        ul {
+          display: inline-flex;
+          color: #fff;
+          width: 100%;
+          li {
+            width: 50%;
+            text-align: left;
+            padding-right: 150px;
+            font-size: 1.5rem;
+          }
+          .category {
+
+          }
+          .tags {
+
+          }
+        }
+      }
+      .blog-post--image {
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: auto;
+          margin-top: -75px;
+        }
+      }
+      .blog-post--content {
+        padding: 25px 50px;
+        .author {
+          color: rgb(142, 142, 142);
+          margin-bottom: 50px;
+          p {
+            width: 100%;
+            margin: auto;
+            border-bottom: 1px solid rgb(142, 142, 142);
+            font-size: 1.5rem;
+            span {
+              padding-left: 415px;
+            }
+          }
+        }
+        p {
+          font-size: 2rem;
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }
+}

@@ -19,6 +19,7 @@ body, html {
   h2 {
     font-family: 'josefin_sansregular', Arial, sans-serif;
     font-size: 8rem;
+    font-weight: lighter;
   }
   h3 {
     font-family: 'josefin_sansthin', Arial, sans-serif;
@@ -71,9 +72,6 @@ body, html {
   background-color: #1a1a1a;
   z-index: 2500;
   transition: 0.5s;
-  -webkit-box-shadow: 0 26px 36px -24px rgba(0,0,0,1);
-  -moz-box-shadow: 0 26px 36px -24px rgba(0,0,0,1);
-  box-shadow: 0 26px 36px -24px rgba(0,0,0,1);
   #navigation {
     display: flex;
     color: #fff;
@@ -147,7 +145,7 @@ body, html {
       position: relative;
       padding-top: 60vh;
       color: black;
-      font-weight: lighter;
+
       .people {
         position: relative;
         width: 100%;
@@ -537,4 +535,6 @@ body, html {
 
 /* RWD sass import */
 @import "rwd";
+@import "blog";
+@import "sidebar";
 /* RWD sass import end */

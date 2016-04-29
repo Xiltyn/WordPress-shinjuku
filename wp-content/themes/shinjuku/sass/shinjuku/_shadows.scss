@@ -1,3 +1,8 @@
+.shadow--bottom {
+  -webkit-box-shadow: 0 15px 20px -15px rgba(0,0,0,1);
+  -moz-box-shadow: 0 15px 20px -15px rgba(0,0,0,1);
+  box-shadow: 0 15px 20px -15px rgba(0,0,0,1);
+}
 .shadow--top-bottom{
   position: relative;
   background-color: #FFFFFF;
@@ -5,7 +10,7 @@
   border-style: solid;
   border-color: #DDDDDD;
   border-radius: 0px;
-  box-shadow: 0px 1px 4px 0px #99A3AD, inset 0px 0px 40px #EEEEEE;
+  box-shadow: 0px 1px 4px 0px #a8a8a8, inset 0px 0px 40px #EEEEEE;
 }
 .shadow--top-bottom:before{
   content: "";
@@ -17,7 +22,7 @@
   bottom: 0px;
   left: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px #2A2E31;
+  box-shadow: 0px 0px 20px #2d2d2d;
 }
 .shadow--top-bottom:after{
   content: "";
@@ -29,7 +34,7 @@
   bottom: 0px;
   left: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px #2A2E31;
+  box-shadow: 0px 0px 20px #2d2d2d;
 }
 .shadow--top-bottom-inset {
   -moz-box-shadow: 0 22px 22px -22px rgba(0, 0, 0, 0.5) inset, 0 -22px 22px -22px rgba(0, 0, 0, 0.5) inset;
