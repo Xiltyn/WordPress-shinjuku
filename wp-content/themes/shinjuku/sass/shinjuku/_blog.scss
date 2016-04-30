@@ -1,18 +1,18 @@
 #main {
   text-align: center;
   #header_small {
-    background: url('css/img/header_background.jpg') no-repeat;
-    background-size:cover;
+    background: url('css/img/blog_header.jpg') no-repeat;
+    background-size: 100vw auto ;
     background-attachment: fixed;
-    background-position: 0 -90px;
+    background-position: 0px -25px;
     font-size: 5rem;
     height: 300px;
     width: 100vw;
     .header-bit {
       position: absolute;
       left: 50%;
-      top: 32%;
-      margin-top: -250px;
+      top: 100%;
+      margin-top: -965px;
       margin-left: -75px;
       line-height: 3rem;
       width: 150px;
