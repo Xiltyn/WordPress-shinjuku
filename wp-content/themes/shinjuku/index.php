@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<!-- Header
 	============================================================||▷ -->
-	<div id="header_small" class="shadow--standard">
+	<div id="header_small" class="shadow--top-bottom-inset">
 		<div class="header-bit">
 			<h2>#blog</h2>
 			<img src="<?php bloginfo('template_directory'); ?>/css/img/logo.png" alt="<?php bloginfo('wp_title') ?>" />
@@ -44,7 +44,7 @@ get_header(); ?>
 				</ul>
 			</div>
 			<div class="blog-post--image shadow--bottom">
-				<img src="<?php bloginfo('template_directory'); ?>/css/img/header_background.jpg" alt="" />
+				<?php the_post_thumbnail( 'full' ); ?>
 			</div>
 			<div class="blog-post--content">
 				<div class="author">
@@ -55,12 +55,26 @@ get_header(); ?>
 				<p>
 					<?php the_excerpt(); ?>
 				</p>
+				<a href="<?php the_permalink(); ?>">
+					<p class="read-more">
+						Read more...
+					</p>
+				</a>
 			</div>
 	  </div>
 
 	<?php endwhile; else : ?>
-		<p> <?php _e('Sorry, no posts matched your criteria'); ?></p>
+		<section id="main">
+			<p> <?php _e('Sorry, no posts matched your criteria'); ?></p>
+		</section>
 	<?php endif; ?>
+
+	<nav>
+		<ul class="pagination">
+			<li><?php previous_posts_link('<< newer'); ?></li>
+			<li><?php next_posts_link('older >>'); ?></li>
+		</ul>
+	</nav>
 
 	<?php get_sidebar(); ?>
 

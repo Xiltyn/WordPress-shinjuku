@@ -150,3 +150,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+function wpdocs_excerpt_more( $more ) {
+    return '...';
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );

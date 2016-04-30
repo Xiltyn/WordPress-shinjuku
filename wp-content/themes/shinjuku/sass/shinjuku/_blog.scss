@@ -4,15 +4,15 @@
     background: url('css/img/header_background.jpg') no-repeat;
     background-size:cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: 0 -90px;
     font-size: 5rem;
     height: 300px;
     width: 100vw;
     .header-bit {
       position: absolute;
       left: 50%;
-      top: 50%;
-      margin-top: -220px;
+      top: 32%;
+      margin-top: -250px;
       margin-left: -75px;
       line-height: 3rem;
       width: 150px;
@@ -28,6 +28,12 @@
         margin-top: 5px;
         width: 100%;
         height: auto;
+      }
+    }
+    .header-bit--search {
+      h2 {
+        font-size: 5.1rem;
+        line-height: 5.1rem;
       }
     }
   }
@@ -102,7 +108,36 @@
         }
         p {
           font-size: 2rem;
-          line-height: 2.5rem;
+          line-height: 3rem;
+        }
+        a {
+          .read-more {
+            margin-top: 10px;
+            color: #1a1a1a;
+            transition: 0.2s;
+          }
+          .read-more:hover {
+            color: rgb(140, 140, 140);
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+    nav {
+      margin-top: 50px;
+      width: 700px;
+      .pagination {
+        display: inline-flex;
+        li {
+          margin: 0 10px;
+          a {
+            color: #1a1a1a;
+            transition: 0.2s;
+          }
+          a:hover {
+            color: #bababa;
+            transition: 0.2s;
+          }
         }
       }
     }

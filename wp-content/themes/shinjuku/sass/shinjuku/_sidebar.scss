@@ -12,6 +12,9 @@
     .sidebar-header {
       margin-top: 0;
     }
+    li {
+      width: 100%;
+    }
   }
   section {
     .sidebar-header {
@@ -29,6 +32,9 @@
       margin-left: 0;
     }
     li {
+      width: 90%;
+      margin: auto;
+      overflow: hidden;
       padding: 0 15px;
       font-size: 2rem;
       list-style: none;
@@ -51,5 +57,13 @@
     li:last-of-type {
       margin-bottom: 15px;
     }
+  }
+  a {
+    transition: 0.2s;
+    font-weight: bold !important;
+  }
+  a:hover {
+    color: #bababa;
+    transition: 0.2s;
   }
 }

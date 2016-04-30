@@ -581,6 +581,34 @@ body, html {
     #top-menu .menu-img img {
       width: 60px;
       height: auto; }
+  #top-menu .search-header--wrapper {
+    position: absolute;
+    width: 10%;
+    height: 2rem;
+    left: 85%;
+    top: 50%;
+    margin-top: -15px;
+    background: #fff; }
+    #top-menu .search-header--wrapper .search-header form div input {
+      font-size: 2rem;
+      width: 100%;
+      height: 100%;
+      font-family: 'josefin_sansthin', Arial, sans-serif;
+      text-align: center;
+      outline: none;
+      border: solid 2px #fff;
+      background-color: #1a1a1a;
+      transition: 0.2s;
+      color: #fff; }
+    #top-menu .search-header--wrapper .search-header form div input:focus {
+      border: solid 2px #1a1a1a;
+      transition: 0.2s;
+      box-shadow: none;
+      outline: none;
+      background-color: #fff;
+      color: #1a1a1a; }
+    #top-menu .search-header--wrapper .search-header form div .btn {
+      display: none; }
 
 #main {
   text-align: center; }
@@ -800,81 +828,19 @@ body, html {
       margin-left: -10vw;
       background-color: #fff;
       padding-top: 15px; }
-      #main #latest-posts .latest-mid .slick-slider .slick-dots {
-        z-index: 500;
-        margin-top: 16px; }
-        #main #latest-posts .latest-mid .slick-slider .slick-dots li button {
-          font-size: 0;
-          line-height: 0;
-          display: block;
-          width: 20px;
-          height: 20px;
-          padding: 5px;
-          cursor: pointer;
-          color: transparent;
-          border: 0;
-          outline: none;
-          background: transparent; }
-        #main #latest-posts .latest-mid .slick-slider .slick-dots li button:before {
-          font-family: slick;
-          font-size: 6px;
-          line-height: 20px;
+      #main #latest-posts .latest-mid #advps_container1 {
+        max-height: 320px !important; }
+        #main #latest-posts .latest-mid #advps_container1 .bx-wrapper .bx-controls {
           position: absolute;
-          top: 0px;
-          left: 0px;
-          width: 20px;
-          height: 20px;
-          content: "•";
-          text-align: center;
-          opacity: 0.50;
-          color: #fff;
-          -webkit-font-smoothing: antialiased; }
-        #main #latest-posts .latest-mid .slick-slider .slick-dots .slick-active button {
-          opacity: 0.15;
-          color: #ff;
+          width: 150px;
+          top: 300px;
+          left: 50%;
+          margin-left: -75px;
           z-index: 1000; }
-      #main #latest-posts .latest-mid .slick-slider .slick-list {
-        max-height: 320px; }
-        #main #latest-posts .latest-mid .slick-slider .slick-list .slick-track .slick-slider--element {
-          position: relative;
-          margin: 0; }
-          #main #latest-posts .latest-mid .slick-slider .slick-list .slick-track .slick-slider--element .cover:hover {
-            padding-top: 10px;
-            transition: 0.5s;
-            background-color: rgba(0, 0, 0, 0.9); }
-          #main #latest-posts .latest-mid .slick-slider .slick-list .slick-track .slick-slider--element .cover {
-            overflow: hidden;
-            padding-top: 275px;
-            height: 100%;
-            transform: translateY(0px);
-            transition: 0.5s;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            color: #fff;
-            margin-left: 1px;
-            background-color: rgba(0, 0, 0, 0.4); }
-            #main #latest-posts .latest-mid .slick-slider .slick-list .slick-track .slick-slider--element .cover h3 {
-              font-size: 4rem;
-              font-weight: bold;
-              line-height: 4.5rem;
-              max-width: 100%;
-              text-align: left;
-              margin-left: 50px;
-              margin-right: 50px;
-              color: #fff;
-              border-bottom: solid 1px #fff; }
-            #main #latest-posts .latest-mid .slick-slider .slick-list .slick-track .slick-slider--element .cover p {
-              padding: 10px 50px; }
-          #main #latest-posts .latest-mid .slick-slider .slick-list .slick-track .slick-slider--element img {
-            min-width: 100%;
-            height: 100%;
-            margin: auto;
-            overflow: hidden;
-            border-width: 1px;
-            border-style: solid;
-            border-color: #DDDDDD;
-            box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3), inset 0px 0px 40px #EEEEEE; }
+          #main #latest-posts .latest-mid #advps_container1 .bx-wrapper .bx-controls .bx-controls-auto {
+            top: -6px; }
+        #main #latest-posts .latest-mid #advps_container1 .bx-wrapper .bx-viewport #advpsslideshow_1 .advps-slide a img {
+          margin-top: -20%; }
     #main #latest-posts .latest-bottom {
       height: 300px;
       background-color: inherit; }
@@ -951,11 +917,11 @@ body, html {
       margin: 20px auto;
       height: 30px; }
   .top-menu--rwd {
-    transform: translate(0, -250px); }
+    transform: translate(0, -240px); }
   .top-menu--hidden {
     transform: translate(0, -290px); }
   #top-menu:hover {
-    transform: translate(0, -50px); }
+    transform: translate(0, 0px); }
   #top-menu {
     display: block;
     width: 100vw;
@@ -966,8 +932,19 @@ body, html {
       display: block;
       width: 90%;
       text-align: center;
+      padding-bottom: 50px;
       margin-bottom: 15px;
       margin-left: 5%; }
+    #top-menu .search-header--wrapper {
+      line-height: 3rem;
+      height: 3rem;
+      width: 250px;
+      left: 50%;
+      top: 100%;
+      margin-top: -125px;
+      margin-left: -125px; }
+      #top-menu .search-header--wrapper form div input {
+        font-size: 3rem !important; }
   #main #header .header-bit {
     margin-top: -140px; }
     #main #header .header-bit h2 {
@@ -1088,15 +1065,15 @@ body, html {
     background: url("css/img/header_background.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: 0 -90px;
     font-size: 5rem;
     height: 300px;
     width: 100vw; }
     #main #header_small .header-bit {
       position: absolute;
       left: 50%;
-      top: 50%;
-      margin-top: -220px;
+      top: 32%;
+      margin-top: -250px;
       margin-left: -75px;
       line-height: 3rem;
       width: 150px; }
@@ -1111,6 +1088,9 @@ body, html {
         margin-top: 5px;
         width: 100%;
         height: auto; }
+    #main #header_small .header-bit--search h2 {
+      font-size: 5.1rem;
+      line-height: 5.1rem; }
   #main #blog {
     position: relative;
     width: 960px;
@@ -1166,7 +1146,27 @@ body, html {
               padding-left: 415px; }
         #main #blog .blog-post--wrapper .blog-post--content p {
           font-size: 2rem;
-          line-height: 2.5rem; }
+          line-height: 3rem; }
+        #main #blog .blog-post--wrapper .blog-post--content a .read-more {
+          margin-top: 10px;
+          color: #1a1a1a;
+          transition: 0.2s; }
+        #main #blog .blog-post--wrapper .blog-post--content a .read-more:hover {
+          color: #8c8c8c;
+          transition: 0.2s; }
+    #main #blog nav {
+      margin-top: 50px;
+      width: 700px; }
+      #main #blog nav .pagination {
+        display: inline-flex; }
+        #main #blog nav .pagination li {
+          margin: 0 10px; }
+          #main #blog nav .pagination li a {
+            color: #1a1a1a;
+            transition: 0.2s; }
+          #main #blog nav .pagination li a:hover {
+            color: #bababa;
+            transition: 0.2s; }
 
 .sidebar--wrapper {
   background: #f7f6f6;
@@ -1179,6 +1179,8 @@ body, html {
     padding: 0 !important; }
   .sidebar--wrapper section:first-of-type .sidebar-header {
     margin-top: 0; }
+  .sidebar--wrapper section:first-of-type li {
+    width: 100%; }
   .sidebar--wrapper section .sidebar-header {
     color: #fff;
     height: 50px;
@@ -1192,6 +1194,9 @@ body, html {
   .sidebar--wrapper section ul {
     margin-left: 0; }
   .sidebar--wrapper section li {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
     padding: 0 15px;
     font-size: 2rem;
     list-style: none;
@@ -1200,5 +1205,11 @@ body, html {
       color: #1a1a1a; }
   .sidebar--wrapper #sidebar-categories li:last-of-type {
     margin-bottom: 15px; }
+  .sidebar--wrapper a {
+    transition: 0.2s;
+    font-weight: bold !important; }
+  .sidebar--wrapper a:hover {
+    color: #bababa;
+    transition: 0.2s; }
 
 /* RWD sass import end */

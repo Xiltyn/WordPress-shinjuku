@@ -1,35 +1,69 @@
 <?php
-/**
- * The template for displaying all single posts.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package Shinjuku
+/*
+	Template name: Single Post
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<!-- Main body
+============================================================||▷ -->
+<section id="main">
 
-		<?php
-		while ( have_posts() ) : the_post();
+	<!-- Header
+	============================================================||▷ -->
+	<div id="header_small" class="shadow--top-bottom-inset">
+		<div class="header-bit">
+			<h2>#blog</h2>
+			<img src="<?php bloginfo('template_directory'); ?>/css/img/logo.png" alt="<?php bloginfo('wp_title') ?>" />
+		</div>
+	</div>
 
-			get_template_part( 'template-parts/content', get_post_format() );
+	<!-- Blog feed
+	============================================================||▷ -->
+	<div id="blog">
+		<h2>Our thoughts</h2>
+		<div class="separator separator--dark"></div>
 
-			the_post_navigation();
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+		<div class="blog-post--wrapper">
+			<div class="blog-post--header">
+				<h3>
+					<?php the_title(); ?>
+				</h3>
+				<ul class="blog-post--meta">
+					<li class="category">
+						#category: <?php the_category( ", " ); ?>
+					</li>
+					<li class="tags">
+						#<?php the_tags('tags: ', ', '); ?>
+					</li>
+				</ul>
+			</div>
+			<div class="blog-post--image shadow--bottom">
+				<?php the_post_thumbnail( 'full' ); ?>
+			</div>
+			<div class="blog-post--content">
+				<div class="author">
+					<p>
+						Written by: <?php the_author(); ?> <span><?php echo get_the_date('F j Y') ?></span>
+					</p>
+				</div>
+				<p>
+					<?php the_content(); ?>
+				</p>
+				<?php wp_link_pages('before=<div id="page-links">&after=</div>'); ?>
+			</div>
+	  </div>
 
-		endwhile; // End of the loop.
-		?>
+	<?php endwhile; else : ?>
+		<p> <?php _e('Sorry, no posts matched your criteria'); ?></p>
+	<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	<?php get_sidebar(); ?>
 
+  </div>
+</section>
 <?php
-get_sidebar();
+
 get_footer();
