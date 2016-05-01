@@ -36,6 +36,24 @@
         line-height: 5.1rem;
       }
     }
+    .header-bit--archive {
+      h2 {
+        font-size: 4.4rem;
+        line-height: 4.4rem;
+      }
+    }
+  }
+  .header_small--archive {
+    background: url('css/img/archive_header.jpg') no-repeat !important;
+    background-size: 100vw auto !important;
+    background-attachment: fixed !important;
+    background-position: 0px -25px !important;
+  }
+  .header_small--search {
+    background: url('css/img/search_header.jpg') no-repeat !important;
+    background-size: 100vw auto !important;
+    background-attachment: fixed !important;
+    background-position: 0px -25px !important;
   }
   #blog {
     position: relative;
@@ -92,7 +110,7 @@
         }
       }
       .blog-post--content {
-        padding: 25px 50px;
+        padding: 50px;
         .author {
           color: rgb(142, 142, 142);
           margin-bottom: 50px;
@@ -119,6 +137,131 @@
           .read-more:hover {
             color: rgb(140, 140, 140);
             transition: 0.2s;
+          }
+        }
+      }
+      #comments {
+        margin-top: 20px;
+        border-top: 1px solid #1a1a1a;
+        width: 600px;
+        margin: auto;
+        .comments-title {
+          font-size: 3rem;
+          line-height: 3rem;
+        }
+        #comment-nav-above {
+          .screen-reader-text {
+
+          }
+          .nav-links {
+            .nav-previous {
+
+            }
+            .nav-next {
+
+            }
+          }
+        }
+        .comment-list {
+          margin-top: 20px;
+          li {
+            article {
+              margin-top: 10px;
+              .comment-meta {
+                position: relative;
+                display: flex;
+                height: 30px;
+                margin-bottom: 15px;
+                margin-left: 40px;
+                padding-left: 10px;
+                background: #3a3a3a;
+                div:last-of-type {
+                  width: 300px !important;
+                }
+                div {
+                  padding-top: 5px;
+                  text-align: left;
+                  width: 125px;
+                  font-size: 1.75rem;
+                  color: #fff;
+                  a {
+                    text-align: right;
+                    width: 150px;
+                    color: #fff;
+                    margin-right: 50px;
+                  }
+                  img {
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    top: 0;
+                    left: -40px;
+                  }
+                }
+              }
+              .comment-content {
+                padding: 30px;
+                background: #fff;
+              }
+              .reply {
+                background: #fff;
+                margin-top: 10px;
+                padding: 10px;
+                a {
+                  color: #1a1a1a;
+                  font-size: 1.75rem;
+                }
+              }
+            }
+          }
+        }
+        #respond {
+          h3 {
+            font-size: 3rem;
+            margin-top: 15px;
+            padding-top: 15px;
+            small {
+              a {
+                color: #1a1a1a;
+              }
+            }
+          }
+          form {
+            p {
+              margin-left: 50px;
+            }
+            .logged-in-as {
+              margin-top: 30px;
+              a {
+                color: #1a1a1a;
+              }
+            }
+            .comment-form-comment {
+              label {
+                display: none;
+              }
+              textarea {
+                margin-top: 5px;
+                margin-bottom: 20px;
+                width: 500px;
+                outline: none;
+                font-family: 'josefin_sansthin', Arial, sans-serif;
+                font-size: 1.75rem;
+                line-height: 1.75rem;
+                border: 2px solid #9b9b9b;
+                transition: 0.2s;
+              }
+              textarea:focus {
+                border: 2px solid #fff;
+                transition: 0.2s;
+              }
+            }
+            .form-submit {
+              padding-bottom: 30px;
+              input {
+
+              }
+            }
           }
         }
       }

@@ -54,6 +54,9 @@ get_header(); ?>
 				</p>
 				<?php wp_link_pages('before=<div id="page-links">&after=</div>'); ?>
 			</div>
+
+			<?php comments_template(); ?> 
+
 	  </div>
 
 	<?php endwhile; else : ?>

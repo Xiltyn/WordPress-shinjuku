@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<!-- Header
 	============================================================||▷ -->
-	<div id="header_small" class="shadow--top-bottom-inset">
+	<div id="header_small" class="header_small--search shadow--top-bottom-inset">
 		<div class="header-bit header-bit--search">
 			<h2>#results</h2>
 			<img src="<?php bloginfo('template_directory'); ?>/css/img/logo.png" alt="<?php bloginfo('wp_title') ?>" />
@@ -75,7 +75,7 @@ get_header(); ?>
 			<li><?php next_posts_link('older >>'); ?></li>
 		</ul>
 	</nav>
-	
+
 	<?php get_sidebar(); ?>
 
   </div>
