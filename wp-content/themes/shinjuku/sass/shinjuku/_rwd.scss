@@ -16,13 +16,13 @@
     /* global overrides end */
   }
   .top-menu--rwd {
-    transform: translate(0, -250px);
+    transform: translate(0, -240px);
   }
   .top-menu--hidden {
     transform: translate(0, -290px);
   }
   #top-menu:hover {
-    transform: translate(0, -50px);
+    transform: translate(0, -0px);
   }
   #top-menu {
     display: block;
@@ -34,8 +34,25 @@
       display: block;
       width: 90%;
       text-align: center;
+      padding-bottom: 50px;
       margin-bottom: 15px;
       margin-left: 5%;
+    }
+    .search-header--wrapper {
+      line-height: 3rem;
+      height: 3rem;
+      width: 250px;
+      left: 50%;
+      top: 100%;
+      margin-top: -125px;
+      margin-left: -125px;
+      form {
+        div {
+          input {
+            font-size: 3rem !important;
+          }
+        }
+      }
     }
   }
   #main {

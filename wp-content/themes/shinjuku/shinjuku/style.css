@@ -202,6 +202,11 @@ table {
   font-style: normal; }
 
 /* _fonts.scss end */
+.shadow--bottom {
+  -webkit-box-shadow: 0 15px 20px -15px black;
+  -moz-box-shadow: 0 15px 20px -15px black;
+  box-shadow: 0 15px 20px -15px black; }
+
 .shadow--top-bottom {
   position: relative;
   background-color: #FFFFFF;
@@ -209,7 +214,7 @@ table {
   border-style: solid;
   border-color: #DDDDDD;
   border-radius: 0px;
-  box-shadow: 0px 1px 4px 0px #99A3AD, inset 0px 0px 40px #EEEEEE; }
+  box-shadow: 0px 1px 4px 0px #a8a8a8, inset 0px 0px 40px #EEEEEE; }
 
 .shadow--top-bottom:before {
   content: "";
@@ -221,7 +226,7 @@ table {
   bottom: 0px;
   left: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px #2A2E31; }
+  box-shadow: 0px 0px 20px #2d2d2d; }
 
 .shadow--top-bottom:after {
   content: "";
@@ -233,7 +238,7 @@ table {
   bottom: 0px;
   left: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px #2A2E31; }
+  box-shadow: 0px 0px 20px #2d2d2d; }
 
 .shadow--top-bottom-inset {
   -moz-box-shadow: 0 22px 22px -22px rgba(0, 0, 0, 0.5) inset, 0 -22px 22px -22px rgba(0, 0, 0, 0.5) inset;
@@ -661,11 +666,11 @@ body, html {
       margin: 20px auto;
       height: 30px; }
   .top-menu--rwd {
-    transform: translate(0, -250px); }
+    transform: translate(0, -240px); }
   .top-menu--hidden {
     transform: translate(0, -290px); }
   #top-menu:hover {
-    transform: translate(0, -50px); }
+    transform: translate(0, 0px); }
   #top-menu {
     display: block;
     width: 100vw;
@@ -676,8 +681,19 @@ body, html {
       display: block;
       width: 90%;
       text-align: center;
+      padding-bottom: 50px;
       margin-bottom: 15px;
       margin-left: 5%; }
+    #top-menu .search-header--wrapper {
+      line-height: 3rem;
+      height: 3rem;
+      width: 250px;
+      left: 50%;
+      top: 100%;
+      margin-top: -125px;
+      margin-left: -125px; }
+      #top-menu .search-header--wrapper form div input {
+        font-size: 3rem !important; }
   #main #header .header-bit {
     margin-top: -140px; }
     #main #header .header-bit h2 {

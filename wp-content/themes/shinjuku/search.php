@@ -1,48 +1,85 @@
 <?php
-/**
- * The template for displaying search results pages.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
- * @package Shinjuku
+/*
+	Template name: Search results
  */
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<!-- Main body
+============================================================||▷ -->
+<section id="main">
 
-		<?php
-		if ( have_posts() ) : ?>
+	<!-- Header
+	============================================================||▷ -->
+	<div id="header_small" class="header_small--search shadow--top-bottom-inset">
+		<div class="header-bit header-bit--search">
+			<h2>#results</h2>
+			<img src="<?php bloginfo('template_directory'); ?>/css/img/logo.png" alt="<?php bloginfo('wp_title') ?>" />
+		</div>
+	</div>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'shinjuku' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+	<!-- Blog feed
+	============================================================||▷ -->
+	<div id="blog">
+		<h2>Our thoughts</h2>
+		<div class="separator separator--dark"></div>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
+		<div class="blog-post--wrapper">
+			<div class="blog-post--header">
+				<h3>
+					<a href="<?php the_permalink(); ?>"
+						title="<?php the_title_attribute(); ?>">
+						<?php the_title(); ?>
+					</a>
+				</h3>
+				<ul class="blog-post--meta">
+					<li class="category">
+						#category: <?php the_category( ", " ); ?>
+					</li>
+					<li class="tags">
+						#<?php the_tags('tags: ', ', '); ?>
+					</li>
+				</ul>
+			</div>
+			<div class="blog-post--image shadow--bottom">
+				<?php the_post_thumbnail( 'full' ); ?>
+			</div>
+			<div class="blog-post--content">
+				<div class="author">
+					<p>
+						Written by: <?php the_author(); ?> <span><?php echo get_the_date('F j Y') ?></span>
+					</p>
+				</div>
+				<p>
+					<?php the_excerpt(); ?>
+				</p>
+				<a href="<?php the_permalink(); ?>">
+					<p class="read-more">
+						Read more...
+					</p>
+				</a>
+			</div>
+	  </div>
 
-			endwhile;
+	<?php endwhile; else : ?>
+		<section id="main">
+			<p> <?php _e('Sorry, no posts matched your criteria'); ?></p>
+		</section>
+	<?php endif; ?>
 
-			the_posts_navigation();
+	<nav>
+		<ul class="pagination">
+			<li><?php previous_posts_link('<< newer'); ?></li>
+			<li><?php next_posts_link('older >>'); ?></li>
+		</ul>
+	</nav>
 
-		else :
+	<?php get_sidebar(); ?>
 
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
-
+  </div>
+</section>
 <?php
-get_sidebar();
+
 get_footer();

@@ -196,10 +196,10 @@ get_header(); ?>
       </div>
     </div>
     <div class="latest-mid shadow--top-bottom-inset">
-      <div class="slick-slider">
+      <!-- <div class="slick-slider">
         <div class="slick-slider--element">
           <div class="cover">
-              <h3>A very amusing post!</h3>
+              <h3><?php the_title(); ?></h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -281,7 +281,10 @@ get_header(); ?>
           </div>
           <img src='<?php bloginfo('template_directory'); ?>/css/img/carousel_7.jpg'/>
         </div>
-      </div>
+      </div> -->
+
+      <?php echo do_shortcode( '[advps-slideshow optset="1"]' ); ?>
+
     </div>
     <div class="latest-bottom">
       <div class="latest-bottom--inside">
