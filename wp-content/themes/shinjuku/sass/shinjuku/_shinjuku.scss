@@ -398,8 +398,8 @@ body, html {
     }
     .latest-mid {
       height: 350px;
-      width: 120vw;
-      margin-left: -10vw;
+      width: 100vw;
+      margin-left: 0;
       background-color: #fff;
       padding-top: 15px;
       #advps_container1 {
@@ -483,30 +483,12 @@ body, html {
     }
   }
 }
-
-/* operational */
-
-.separator {
-  width: 940px;
-  margin: 20px auto;
-  height: 30px;
-}
-.separator--dark {
-  background: url('css/img/separator.jpg') no-repeat center;
-}
-.separator--light {
-  background: url('css/img/separator_light.jpg') no-repeat center;
-}
-.hidden {
-  visibility: hidden;
-  opacity: 0;
-}
-/* operational end */
-
 /* main CSS end */
 
 /* RWD sass import */
-@import "rwd";
 @import "blog";
 @import "sidebar";
+@import "operational";
+
+@import "rwd";
 /* RWD sass import end */

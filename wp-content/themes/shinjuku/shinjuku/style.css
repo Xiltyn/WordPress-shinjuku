@@ -698,6 +698,47 @@ body, html {
     margin-top: -140px; }
     #main #header .header-bit h2 {
       font-size: 8.5rem; }
+  #main #header_small {
+    background-size: auto 400px !important;
+    background-position: top !important; }
+  #main #blog {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0; }
+    #main #blog .blog-post--wrapper {
+      width: 100%; }
+      #main #blog .blog-post--wrapper .blog-post--header {
+        height: 100px; }
+        #main #blog .blog-post--wrapper .blog-post--header ul li {
+          padding-right: 0; }
+      #main #blog .blog-post--wrapper .blog-post--image img {
+        height: 275px;
+        width: auto; }
+      #main #blog .blog-post--wrapper .blog-post--content {
+        padding: 20px; }
+        #main #blog .blog-post--wrapper .blog-post--content .author {
+          margin-bottom: 20px; }
+          #main #blog .blog-post--wrapper .blog-post--content .author p span {
+            padding-left: 10px; }
+      #main #blog .blog-post--wrapper #comments {
+        width: 100%; }
+        #main #blog .blog-post--wrapper #comments .comment-list li article .comment-meta {
+          height: 50px; }
+          #main #blog .blog-post--wrapper #comments .comment-list li article .comment-meta .comment-author img {
+            top: 9px;
+            left: -35px; }
+        #main #blog .blog-post--wrapper #comments #respond form p:first-of-type {
+          margin-left: 10px; }
+        #main #blog .blog-post--wrapper #comments #respond form p {
+          margin-left: 10px; }
+        #main #blog .blog-post--wrapper #comments #respond form .comment-form-comment {
+          margin-left: 1.5%; }
+          #main #blog .blog-post--wrapper #comments #respond form .comment-form-comment textarea {
+            width: 98.5%; }
+        #main #blog .blog-post--wrapper #comments #respond form .form-submit input {
+          margin-left: -5px; }
+    #main #blog .sidebar--wrapper {
+      display: none; }
   #main #overview {
     background-color: #fff;
     position: relative;

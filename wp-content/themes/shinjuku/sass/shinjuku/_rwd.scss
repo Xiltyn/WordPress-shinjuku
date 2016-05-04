@@ -66,6 +66,85 @@
         }
       }
     }
+    #header_small {
+      background-size: auto 400px !important;
+      background-position: top !important;
+    }
+    #blog {
+      width: 100%;
+      margin: auto;
+      margin-bottom: 0;
+      .blog-post--wrapper {
+        width: 100%;
+        .blog-post--header {
+          height: 100px;
+          ul {
+            li {
+              padding-right: 0;
+            }
+          }
+        }
+        .blog-post--image {
+          img {
+            height: 275px;
+            width: auto;
+          }
+        }
+        .blog-post--content {
+          padding: 20px;
+          .author {
+            margin-bottom: 20px;
+            p {
+              span {
+                padding-left: 10px;
+              }
+            }
+          }
+        }
+        #comments {
+          width: 100%;
+          .comment-list {
+            li {
+              article {
+                .comment-meta {
+                  height: 50px;
+                  .comment-author {
+                    img {
+                      top: 9px;
+                      left: -35px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          #respond {
+            form {
+              p:first-of-type {
+                margin-left: 10px;
+              }
+              p {
+                margin-left: 10px;
+              }
+              .comment-form-comment {
+                margin-left: 1.5%;
+                textarea {
+                  width: 98.5%;
+                }
+              }
+              .form-submit {
+                input {
+                  margin-left: -5px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .sidebar--wrapper {
+        display: none;
+      }
+    }
     #overview {
       background-color: #fff;
       position: relative;

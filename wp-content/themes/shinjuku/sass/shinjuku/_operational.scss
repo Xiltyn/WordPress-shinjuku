@@ -1,0 +1,28 @@
+/* operational */
+
+.separator {
+  width: 940px;
+  margin: 20px auto;
+  height: 30px;
+}
+.separator--dark {
+  background: url('css/img/separator.jpg') no-repeat center;
+}
+.separator--light {
+  background: url('css/img/separator_light.jpg') no-repeat center;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+.quote {
+  background: #3a3a3a;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #fff ;
+  margin: 20px;
+  padding: 20px;
+  font-family: 'josefin_sansthin', 'Arial';
+}
+
+/* operational end */
