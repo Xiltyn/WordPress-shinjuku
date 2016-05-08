@@ -17,18 +17,10 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<!-- Live reload script import
+<!-- Animate stylesheets import
 ============================================================||▷ -->
-<script src="<?php bloginfo('stylesheet_directory'); ?>/live.js"></script>
-<!-- Live reload script import :: END
-============================================================||▷ -->
-
-<!-- Shinjuku stylesheets import
-============================================================||▷ -->
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/slick.css"/>
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/slick-theme.css"/>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/animate.css">
-<!-- Shinjuku stylesheets import :: END
+<!-- Animate stylesheets import :: END
 ============================================================||▷ -->
 
 <?php wp_head(); ?>

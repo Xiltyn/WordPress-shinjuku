@@ -712,8 +712,8 @@ body, html {
         #main #blog .blog-post--wrapper .blog-post--header ul li {
           padding-right: 0; }
       #main #blog .blog-post--wrapper .blog-post--image img {
-        height: 275px;
-        width: auto; }
+        min-height: 275px;
+        width: 100%; }
       #main #blog .blog-post--wrapper .blog-post--content {
         padding: 20px; }
         #main #blog .blog-post--wrapper .blog-post--content .author {
@@ -840,13 +840,25 @@ body, html {
         background: none; }
       #main #topics .content .blocks .critique {
         background: none; }
-  #main #latest-posts .latest-mid .slick-slider .slick-list .slick-track .slick-slider--element .cover {
-    padding-top: 10px; }
+  #main #latest-posts .latest-mid #advps_container1 .bx-wrapper .bx-viewport #advpsslideshow_1 .advps-slide a img {
+    margin-top: 0px !important;
+    width: auto !important;
+    height: 320px !important;
+    min-width: 100% !important; }
   #main #latest-posts .latest-bottom .latest-bottom--inside .content {
     background-color: rgba(0, 0, 0, 0.4); }
     #main #latest-posts .latest-bottom .latest-bottom--inside .content .quote {
       width: 100%;
       background-position: 55px 95px; } }
+
+.contact-name input {
+  width: 85% !important; }
+
+.contact-mail input {
+  width: 85% !important; }
+
+.contact-contents textarea {
+  width: 85% !important; }
 
 /* _rwd.scss end */
 /* RWD sass import end */

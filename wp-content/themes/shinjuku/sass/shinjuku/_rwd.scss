@@ -86,8 +86,8 @@
         }
         .blog-post--image {
           img {
-            height: 275px;
-            width: auto;
+            min-height: 275px;
+            width: 100%;
           }
         }
         .blog-post--content {
@@ -279,12 +279,19 @@
     }
   #latest-posts {
     .latest-mid {
-      .slick-slider {
-        .slick-list {
-          .slick-track {
-            .slick-slider--element {
-              .cover {
-                padding-top: 10px;
+      #advps_container1 {
+        .bx-wrapper {
+          .bx-viewport {
+            #advpsslideshow_1 {
+              .advps-slide {
+                a {
+                  img {
+                    margin-top: 0px !important;
+                    width: auto !important;
+                    height: 320px !important;
+                    min-width: 100% !important;
+                  }
+                }
               }
             }
           }
@@ -305,4 +312,20 @@
     }
   }
 }
+.contact-name {
+  input {
+    width: 85% !important;
+  }
+}
+.contact-mail {
+  input {
+    width: 85% !important;
+  }
+}
+.contact-contents {
+  textarea {
+    width: 85% !important;
+  }
+}
+
 /* _rwd.scss end */

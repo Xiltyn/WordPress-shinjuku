@@ -1,0 +1,97 @@
+/* _contact.scss */
+
+.jsn-form-submit {
+  margin: 50px !important;
+  background: none !important;
+  border: 2px solid #1a1a1a !important;
+  border-radius: 0px !important;
+  background-color: #1a1a1a !important;
+  width: 100px !important;
+  height: 30px !important;
+  font-size: 2.5rem !important;
+  font-family: josefin_sansthin !important;
+  font-weight: bold !important;
+  transition: 0.3s !important;
+  box-shadow: none !important;
+}
+.jsn-form-submit:hover {
+  background-color: #fff !important;
+  color: #1a1a1a !important;
+  transition: 0.3s !important;
+}
+.jsn-form-submit:active {
+  border-color: #fff !important;
+  background-color: #fff !important;
+  color: #1a1a1a !important;
+  transition: 0.3s !important;
+}
+.control-group {
+  border: none !important;
+  background: #fff !important;
+}
+.contact-name {
+  label {
+    font-family: 'josefin_sanslight', Arial, sans-serif !important;
+  }
+  input {
+    width: 450px !important;
+    outline: none !important;
+    font-family: 'josefin_sansthin', Arial, sans-serif !important;
+    font-size: 1.75rem !important;
+    line-height: 1.75rem !important;
+    border: 2px solid #9b9b9b !important;
+    transition: 0.2s !important;
+    border-radius: 0 !important;
+    padding: 5px 15px !important;
+  }
+  input:focus {
+    border: 2px solid #1a1a1a !important;
+    transition: 0.2s !important;
+  }
+}
+.contact-mail {
+  label {
+    font-family: 'josefin_sanslight', Arial, sans-serif !important;
+  }
+  input {
+    width: 450px !important;
+    outline: none !important;
+    font-family: 'josefin_sansthin', Arial, sans-serif !important;
+    font-size: 1.75rem !important;
+    line-height: 1.75rem !important;
+    border: 2px solid #9b9b9b !important;
+    transition: 0.2s !important;
+    border-radius: 0 !important;
+    padding: 5px 15px !important;
+  }
+  input:focus {
+    border: 2px solid #1a1a1a !important;
+    transition: 0.2s !important;
+  }
+}
+.contact-contents {
+  label {
+    font-family: 'josefin_sanslight', Arial, sans-serif !important;
+  }
+  textarea {
+    width: 450px !important;
+    outline: none !important;
+    font-family: 'josefin_sansthin', Arial, sans-serif !important;
+    font-size: 1.75rem !important;
+    line-height: 1.75rem !important;
+    border: 2px solid #9b9b9b !important;
+    transition: 0.2s !important;
+    border-radius: 0 !important;
+    padding: 15px !important;
+  }
+  textarea:focus {
+    border: 2px solid #1a1a1a !important;
+    transition: 0.2s !important;
+  }
+}
+.contact-attachment {
+  label {
+    font-family: 'josefin_sanslight', Arial, sans-serif !important;
+  }
+}
+/* _contact.scss end */

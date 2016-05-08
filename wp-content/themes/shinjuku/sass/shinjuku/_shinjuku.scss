@@ -417,6 +417,7 @@ body, html {
             }
           }
           .bx-viewport {
+            height: 320px !important;
             #advpsslideshow_1 {
               .advps-slide {
                 a {
@@ -489,6 +490,7 @@ body, html {
 @import "blog";
 @import "sidebar";
 @import "operational";
+@import "contact";
 
 @import "rwd";
 /* RWD sass import end */

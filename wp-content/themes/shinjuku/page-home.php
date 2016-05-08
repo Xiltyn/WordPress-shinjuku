@@ -27,7 +27,7 @@ $quote_author                 = get_post_meta( 11, 'quote_author', true );
 get_header(); ?>
 
 <!-- Main body
-============================================================||▷ -->
+==============================================================||▷ -->
 <section id="main">
 
   <!-- Header
@@ -196,92 +196,6 @@ get_header(); ?>
       </div>
     </div>
     <div class="latest-mid shadow--top-bottom-inset">
-      <!-- <div class="slick-slider">
-        <div class="slick-slider--element">
-          <div class="cover">
-              <h3><?php the_title(); ?></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-          </div>
-          <img src='<?php bloginfo('template_directory'); ?>/css/img/carousel_1.jpg'/>
-        </div>
-        <div class="slick-slider--element">
-          <div class="cover">
-              <h3>Japanese granny kills a hamster!</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-          </div>
-          <img src='<?php bloginfo('template_directory'); ?>/css/img/carousel_2.jpg'/>
-        </div>
-        <div class="slick-slider--element">
-          <div class="cover">
-              <h3>What is the origin of GO?</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-          </div>
-          <img src='<?php bloginfo('template_directory'); ?>/css/img/carousel_3.jpg'/>
-        </div>
-        <div class="slick-slider--element">
-          <div class="cover">
-              <h3>Best anime for vets</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-          </div>
-          <img src='<?php bloginfo('template_directory'); ?>/css/img/carousel_4.jpg'/>
-        </div>
-        <div class="slick-slider--element">
-          <div class="cover">
-              <h3>Who says I even need a name?</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-          </div>
-          <img src='<?php bloginfo('template_directory'); ?>/css/img/carousel_5.jpg'/>
-        </div>
-        <div class="slick-slider--element">
-          <div class="cover">
-              <h3>Japanese music re-uncovered</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-          </div>
-          <img src='<?php bloginfo('template_directory'); ?>/css/img/carousel_6.jpg'/>
-        </div>
-        <div class="slick-slider--element">
-          <div class="cover">
-              <h3>I don't have other ideas</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-          </div>
-          <img src='<?php bloginfo('template_directory'); ?>/css/img/carousel_7.jpg'/>
-        </div>
-      </div> -->
 
       <?php echo do_shortcode( '[advps-slideshow optset="1"]' ); ?>
 
@@ -302,6 +216,6 @@ get_header(); ?>
 
 </section>
 <!-- Main body :: END
-============================================================||▷ -->
+==============================================================||▷ -->
 
 <?php get_footer(); ?>

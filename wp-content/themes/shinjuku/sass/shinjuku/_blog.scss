@@ -43,6 +43,12 @@
         line-height: 4.4rem;
       }
     }
+    .header-bit--contact {
+      h2 {
+        font-size: 4.5rem;
+        line-height: 4rem;
+      }
+    }
   }
   .header_small--archive {
     background: url('css/img/archive_header.jpg') no-repeat !important;
@@ -52,6 +58,12 @@
   }
   .header_small--search {
     background: url('css/img/search_header.jpg') no-repeat !important;
+    background-size: 100vw auto !important;
+    background-attachment: fixed !important;
+    background-position: 0px -25px !important;
+  }
+  .header_small--contact {
+    background: url('css/img/contact_header.jpg') no-repeat !important;
     background-size: 100vw auto !important;
     background-attachment: fixed !important;
     background-position: 0px -25px !important;
@@ -129,7 +141,10 @@
           font-size: 2rem;
           line-height: 3rem;
           margin-bottom: 15px;
-          font-family: 'josefin_sansthin', 'Arial';
+          font-family: 'josefin_sanslight', 'Arial';
+          strong {
+            font-weight: bolder !important;
+          }
         }
         blockquote {
           p {
@@ -150,6 +165,7 @@
             text-align: left;
             margin-left: 40px;
             list-style: initial;
+            font-family: 'josefin_sanslight', 'Arial';
           }
         }
         ol {
@@ -160,6 +176,7 @@
             line-height: 3rem;
             text-align: left;
             margin-left: 40px;
+            font-family: 'josefin_sanslight', 'Arial';
           }
         }
         a {
